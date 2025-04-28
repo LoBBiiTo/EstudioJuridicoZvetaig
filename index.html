@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudio jurídico Zvetaig & Asociados</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#FDCD22", secondary: "#0A1F44", dark: "#000000" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Roboto', serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(10, 31, 68, 0.7)), url('https://readdy.ai/api/search-image?query=elegant%2520law%2520office%2520interior%2520with%2520bookshelves%2520filled%2520with%2520law%2520books%252C%2520wooden%2520desk%252C%2520leather%2520chair%252C%2520warm%2520lighting%252C%2520professional%2520atmosphere%252C%2520legal%2520documents%2520on%2520desk%252C%2520golden%2520accents%252C%2520dark%2520blue%2520walls%252C%2520sophisticated%2520decor&width=1920&height=1080&seq=1&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+      .service-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .contact-card:hover {
+          transform: translateY(-3px);
+      }
+      input:focus, textarea:focus {
+          border-color: #FDCD22;
+          outline: none;
+      }
+      .file-input-label {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+      }
+      .file-input:focus + .file-input-label {
+          border-color: #FDCD22;
+      }
+    </style>
+  </head>
+  <body class="bg-[#efefe4] flex flex-col min-h-screen bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-secondary shadow-md fixed w-full top-0 z-50">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="text-white text-xl font-bold">
+          <h1 class="font-['Playfair_Display'] text-primary">
+            Estudio jurídico Zvetaig & Asociados
+          </h1>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="#inicio"
+            class="text-white hover:text-primary transition-colors"
+            >Inicio</a
+          >
+          <a
+            href="#servicios"
+            class="text-white hover:text-primary transition-colors"
+            >Servicios</a
+          >
+          <a
+            href="#por-que-elegirnos"
+            class="text-white hover:text-primary transition-colors"
+            >¿Por qué elegirnos?</a
+          >
+          <a
+            href="#contacto"
+            class="text-white hover:text-primary transition-colors"
+            >Contacto</a
+          >
+        </nav>
+        <button
+          class="md:hidden text-white w-10 h-10 flex items-center justify-center"
+        >
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center pt-16">
+      <div class="container mx-auto px-4 py-20">
+        <div class="max-w-2xl">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+          >
+            Estudio <span class="text-primary">Zvetaig</span> & Asociados
+          </h1>
+          <p class="text-xl md:text-2xl text-white mb-8 font-light">
+            "Cuidamos tus intereses, defendemos tus derechos"
+          </p>
+          <p class="text-gray-300 mb-10 text-lg max-w-xl">
+            El estudio Zvetaig y Asociados es una firma jurídica con sede en Buenos Aires. <br/><br/> Nos especializamos en diversas ramas del derecho. Con amplia experiencia y un trato personalizado. <br/>
+            Nuestros abogados te ayudarán en todo, buscando el camino a tu solución legal.
+
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#consulta"
+              class="bg-primary text-dark font-medium py-3 px-8 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap text-center"
+              >Consulta Gratuita</a
+            >
+            <a
+              href="#contacto"
+              class="border-2 border-white text-white py-3 px-8 !rounded-button hover:bg-white hover:text-secondary transition-all whitespace-nowrap text-center"
+              >Contáctenos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- Por qué Elegirnos -->
+    <section id="por-que-elegirnos" class="bg-secondary py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            ¿Por qué elegirnos?
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+          <p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+            Nuestro compromiso es brindar un servicio jurídico de excelencia,
+            personalizado y efectivo para cada uno de nuestros clientes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded shadow-lg hover:bg-opacity-10 transition-all"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-scales-3-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">
+              Experiencia Comprobada
+            </h3>
+            <p class="text-gray-300">
+              Nuestro equipo cuenta con más de 15 años de experiencia en
+              diversas áreas del derecho, brindando soluciones efectivas a casos
+              complejos.
+            </p>
+          </div>
+
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded shadow-lg hover:bg-opacity-10 transition-all"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-user-heart-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">
+              Atención Personalizada
+            </h3>
+            <p class="text-gray-300">
+              Entendemos que cada caso es único. Por eso, brindamos atención
+              personalizada y adaptamos nuestras estrategias a las necesidades
+              específicas de cada cliente.
+            </p>
+          </div>
+
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded shadow-lg hover:bg-opacity-10 transition-all"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mb-6"
+            >
+              <i class="ri-shield-check-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">
+              Compromiso y Ética
+            </h3>
+            <p class="text-gray-300">
+              Nos regimos por los más altos estándares éticos y profesionales,
+              garantizando transparencia y honestidad en cada etapa del proceso
+              legal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="flex-grow container mx-auto px-4 py-8 pt-20">
+
+
+    <!-- Nuestros Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Nuestros Servicios
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Accidentes de tránsito -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-car-crash-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">
+              Accidentes de Tránsito
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Representamos a víctimas de accidentes de tránsito para obtener la
+              compensación que merecen por lesiones, daños materiales y
+              perjuicios sufridos.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Reclamos por lesiones personales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Indemnizaciones por daños materiales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Defensa en casos de responsabilidad</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Derecho Civil -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-file-list-3-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">Derecho Civil</h3>
+            <p class="text-gray-600 mb-4">
+              Asesoramos en todo tipo de asuntos civiles, desde contratos y
+              obligaciones hasta responsabilidad civil y derechos reales.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Contratos y obligaciones</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Responsabilidad civil</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Derechos reales y propiedad</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Derecho Penal -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-criminal-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">Derecho Penal</h3>
+            <p class="text-gray-600 mb-4">
+              Ofrecemos defensa penal integral, representando a nuestros
+              clientes en todas las etapas del proceso penal con profesionalismo
+              y dedicación.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Defensa en causas penales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Representación en juicios orales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Asesoramiento preventivo</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Derecho de Familia -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-heart-2-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">
+              Derecho de Familia
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Brindamos asesoramiento en todos los aspectos del derecho de
+              familia, con un enfoque sensible y centrado en el bienestar
+              familiar.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Divorcios y separaciones</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Custodia y régimen de visitas</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Pensiones alimenticias</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Sucesiones -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-file-paper-2-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">Sucesiones</h3>
+            <p class="text-gray-600 mb-4">
+              Asesoramos en procesos sucesorios, testamentos y particiones
+              hereditarias, facilitando la transición patrimonial en momentos
+              difíciles.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Sucesiones testamentarias</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Sucesiones intestadas</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Partición de bienes hereditarios</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Derecho Laboral -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6"
+            >
+              <i class="ri-briefcase-4-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">
+              Derecho Laboral
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Defendemos los derechos de trabajadores y asesoramos a empleadores
+              en todos los aspectos de la relación laboral y seguridad social.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Despidos y indemnizaciones</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Accidentes de trabajo</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Conflictos laborales</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Derecho del Deporte -->
+          <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300 col-span-1 md:col-span-2 lg:col-span-3 mx-auto max-w-lg px-10">
+            <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+              <i class="ri-football-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">
+              Derecho del Deporte
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Especialistas en asuntos legales relacionados con el ámbito
+              deportivo, representando a deportistas, clubes y entidades
+              deportivas.
+            </p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Contratos de deportistas profesionales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Litigios deportivos</span>
+              </li>
+              <li class="flex items-start">
+                <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                <span>Asesoramiento a clubes y federaciones</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Formulario de Consulta -->
+<section id="consulta" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-secondary rounded-lg shadow-xl overflow-hidden">
+        <div class="p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-white mb-2">
+            Consulta Online
+          </h2>
+          <div class="w-16 h-1 bg-primary mb-6"></div>
+          <p class="text-gray-300 mb-8">
+            Complete el siguiente formulario y nuestro equipo se pondrá en
+            contacto con usted a la brevedad para brindarle la asesoría que
+            necesita.
+          </p>
+          <form id="document-form" class="space-y-8" action="https://formspree.io/f/mzzrbory" method="POST" enctype="multipart/form-data"></form>            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <label
+                  for="nombre"
+                  class="block text-sm font-medium text-gray-300 mb-4"
+                  >Nombre y Apellido *</label
+                >
+                <input
+                  type="text"
+                  id="nombre"
+                  class="w-full px-4 py-3 bg-white bg-opacity-10 border border-gray-600 rounded focus:border-primary text-white"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-300 mb-4"
+                  >Correo Electrónico *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 bg-white bg-opacity-10 border border-gray-600 rounded focus:border-primary text-white mb-4"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="servicio"
+                class="block text-sm font-medium text-gray-300 mb-4"
+                >Área de Consulta *</label
+              >
+              <div class="relative">
+                <select
+                  id="servicio"
+                  class="w-full px-4 py-3 bg-white bg-opacity-10 border border-gray-600 rounded focus:border-primary text-white appearance-none pr-8 [&>option]:text-secondary mb-4"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Seleccione un área
+                  </option>
+                  <option value="accidentes">Accidentes de Tránsito</option>
+                  <option value="civil">Derecho Civil</option>
+                  <option value="penal">Derecho Penal</option>
+                  <option value="familia">Derecho de Familia</option>
+                  <option value="sucesiones">Sucesiones</option>
+                  <option value="laboral">Derecho Laboral</option>
+                  <option value="deporte">Derecho del Deporte</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <div
+                  class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
+                >
+                  <i class="ri-arrow-down-s-line text-gray-400"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label
+                for="mensaje"
+                class="block text-sm font-medium text-gray-300 mb-4"
+                >Descripción del Caso *</label
+              >
+              <textarea
+                id="mensaje"
+                rows="5"
+                class="w-full px-4 py-3 bg-white bg-opacity-10 border border-gray-600 rounded focus:border-primary text-white resize-none mb-4"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-4"
+                >Documentos Relevantes</label
+              >
+              <div
+                class="relative border border-dashed border-gray-500 rounded-lg p-6 text-center mb-4"
+              >
+                <input
+                  type="file"
+                  class="absolute inset-0 w-full h-full opacity-0 z-10 cursor-pointer file-input"
+                  multiple
+                />
+                <div class="flex flex-col items-center">
+                  <i
+                    class="ri-upload-cloud-line ri-2x text-gray-400 mb-2"
+                  ></i>
+                  <p class="text-sm text-gray-400">
+                    Arrastre sus archivos aquí o haga clic para
+                    seleccionarlos
+                  </p>
+                  <p class="text-xs text-gray-500 mt-4">
+                    Formatos aceptados: PDF, DOC, DOCX, JPG, PNG (Máx. 10MB)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="flex items-center h-5 mb-4">
+                <input
+                  id="terminos"
+                  type="checkbox"
+                  class="w-4 h-4 border-gray-500 rounded"
+                  required
+                />
+              </div>
+              <label for="terminos" class="ml-3 text-sm text-gray-300">
+                Acepto la política de privacidad y el tratamiento de mis
+                datos personales
+              </label>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-dark font-medium py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+              >
+                Enviar Consulta
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Contáctenos
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+          <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+            Estamos a su disposición para brindarle la asesoría legal que
+            necesita. No dude en contactarnos por cualquiera de nuestros canales
+            de comunicación.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Teléfono -->
+          <div
+            class="contact-card bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-6"
+            >
+              <i class="ri-phone-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">Teléfono</h3>
+            <p class="text-gray-600 mb-6">+54 9 11-6020-9240</p>
+            <a
+              href="https://wa.me/5491160209240"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white py-2 px-4 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap w-full"
+            >
+              <i class="ri-whatsapp-fill"></i>
+              <span>Chatear por WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div
+            class="contact-card bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-6"
+            >
+              <i class="ri-mail-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">
+              Correo Electrónico
+            </h3>
+            <p class="text-gray-600 mb-6">zetalegales@gmail.com</p>
+            <a
+              href="mailto:zetalegales@gmail.com"
+              class="inline-flex items-center justify-center gap-2 bg-secondary text-white py-2 px-4 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap w-full"
+            >
+              <i class="ri-mail-send-line"></i>
+              <span>Enviar Email</span>
+            </a>
+          </div>
+
+          <!-- Dirección -->
+          <div
+            class="contact-card bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-6"
+            >
+              <i class="ri-map-pin-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3">Dirección</h3>
+            <p class="text-gray-600 mb-6">
+              Colombia 4928, San Justo, Buenos Aires, Argentina
+            </p>
+            <a
+              href="https://maps.google.com/?q=Colombia+4928,+San+Justo,+Buenos+Aires,+Argentina"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2 bg-secondary text-white py-2 px-4 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap w-full"
+            >
+              <i class="ri-map-2-line"></i>
+              <span>Ver en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Lo que dicen nuestros clientes
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+          <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+            La satisfacción de nuestros clientes es nuestro mayor orgullo.
+            Conozca algunas de las experiencias de quienes han confiado en
+            nosotros.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Excelente atención y profesionalismo. Resolvieron mi caso de
+              accidente de tránsito de manera rápida y eficiente, logrando una
+              compensación justa. Totalmente recomendable."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4"
+              >
+                <i class="ri-user-3-fill text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Martín Rodríguez</h4>
+                <p class="text-sm text-gray-500">Cliente desde 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Gracias al equipo de Zvetaig por su asesoramiento en mi divorcio.
+              Fueron muy empáticos y me guiaron en todo el proceso, haciendo que
+              una situación difícil fuera más llevadera."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4"
+              >
+                <i class="ri-user-3-fill text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Laura Fernández</h4>
+                <p class="text-sm text-gray-500">Cliente desde 2021</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+              <i class="ri-star-fill text-primary"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Profesionales de primer nivel. Me ayudaron con un conflicto
+              laboral complejo y lograron un acuerdo muy favorable. Su
+              conocimiento y dedicación son excepcionales."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4"
+              >
+                <i class="ri-user-3-fill text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">Gabriel Méndez</h4>
+                <p class="text-sm text-gray-500">Cliente desde 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-secondary text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="text-xl font-bold mb-6 text-primary">
+            Estudio jurídico Zvetaig & Asociados
+          </h3>
+          <p class="text-gray-300 mb-6">
+            Comprometidos con la excelencia legal y la satisfacción de nuestros clientes desde 2005.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/zetalegales/" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary hover:text-secondary transition-all">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/julian-zvetaig-230915361/" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary hover:text-secondary transition-all">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-6">Servicios</h3>
+          <ul class="space-y-3">
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Accidentes de Tránsito</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Derecho Civil</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Derecho Penal</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Derecho de Familia</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Sucesiones</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Derecho Laboral</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Derecho del Deporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-6">Enlaces Rápidos</h3>
+          <ul class="space-y-3">
+            <li><a href="#inicio" class="text-gray-300 hover:text-primary transition-colors">Inicio</a></li>
+            <li><a href="#por-que-elegirnos" class="text-gray-300 hover:text-primary transition-colors">¿Por qué elegirnos?</a></li>
+            <li><a href="#servicios" class="text-gray-300 hover:text-primary transition-colors">Servicios</a></li>
+            <li><a href="#consulta" class="text-gray-300 hover:text-primary transition-colors">Consulta Online</a></li>
+            <li><a href="#contacto" class="text-gray-300 hover:text-primary transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-6">Contacto</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start"><i class="ri-map-pin-line mr-3 mt-1"></i><span>Colombia 4928, San Justo, Buenos Aires, Argentina</span></li>
+            <li class="flex items-start"><i class="ri-phone-line mr-3 mt-1"></i><span>+54 9 11-6020-9240</span></li>
+            <li class="flex items-start"><i class="ri-mail-line mr-3 mt-1"></i><span>zetalegales@gmail.com</span></li>
+            <li class="flex items-start"><i class="ri-time-line mr-3 mt-1"></i><span>Lunes a Viernes: 9:00 - 18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Estudio jurídico Zvetaig & Asociados. Todos los derechos reservados.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Política de Privacidad</a>
+            <a href="#" class="text-gray-400 text-sm hover:text-primary transition-colors">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // File input handling
+        const fileInput = document.querySelector(".file-input");
+        if (fileInput) {
+          fileInput.addEventListener("change", function () {
+            const fileCount = this.files.length;
+            const fileContainer = this.parentElement;
+            const fileMessage = fileContainer.querySelector("p:first-of-type");
+
+            if (fileCount > 0) {
+              fileMessage.textContent =
+                fileCount === 1
+                  ? "1 archivo seleccionado"
+                  : `${fileCount} archivos seleccionados`;
+            } else {
+              fileMessage.textContent =
+                "Arrastre sus archivos aquí o haga clic para seleccionarlos";
+            }
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const menuButton = document.querySelector(".md\\:hidden");
+        const mobileMenu = document.createElement("div");
+        mobileMenu.className =
+          "fixed inset-0 bg-secondary z-50 transform -translate-x-full transition-transform duration-300 ease-in-out";
+        mobileMenu.innerHTML = `
+                      <div class="flex justify-end p-4">
+                          <button class="text-white w-10 h-10 flex items-center justify-center close-menu">
+                              <i class="ri-close-line ri-lg"></i>
+                          </button>
+                      </div>
+                      <div class="flex flex-col items-center space-y-6 p-8">
+                          <a href="#inicio" class="text-white text-xl hover:text-primary transition-colors mobile-link">Inicio</a>
+                          <a href="#servicios" class="text-white text-xl hover:text-primary transition-colors mobile-link">Servicios</a>
+                          <a href="#por-que-elegirnos" class="text-white text-xl hover:text-primary transition-colors mobile-link">¿Por qué elegirnos?</a>
+                          <a href="#contacto" class="text-white text-xl hover:text-primary transition-colors mobile-link">Contacto</a>
+                          <a href="#consulta" class="mt-4 bg-primary text-dark font-medium py-3 px-6 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Consulta Gratuita</a>
+                      </div>
+                  `;
+
+        document.body.appendChild(mobileMenu);
+
+        menuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("-translate-x-full");
+        });
+
+        mobileMenu
+          .querySelector(".close-menu")
+          .addEventListener("click", function () {
+            mobileMenu.classList.add("-translate-x-full");
+          });
+
+        mobileMenu.querySelectorAll(".mobile-link").forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("-translate-x-full");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
